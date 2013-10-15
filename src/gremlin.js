@@ -395,6 +395,23 @@ Gremlin = (function () {
         setProperty: qryMain('setProperty'),
         getProperty: qryMain('getProperty'),
 
+        //Titan v0.4.0 specifics
+        single: qryMain('single'),
+        list: qryMain('list'),
+        oneToMany: qryMain('oneToMany'), // replaces unique(Direction.IN)
+        manyToOne: qryMain('manyToOne'), // replaces unique(Direction.OUT)
+        oneToOne: qryMain('oneToOne'),   // replaces unique(Direction.IN).unique(Direction.OUT)
+        makeKey: qryMain('makeKey'),
+        makeLabel: qryMain('makeLabel'),
+        make: qryMain('make'),
+        sortKey: qryMain('sortKey'),
+        signature: qryMain('signature'),
+        unidirected: qryMain('unidirected'),
+
+        createKeyIndex: qryMain('createKeyIndex'),
+        getIndexes: qryMain('getIndexes'),
+        hasIndex: qryMain('hasIndex'),
+
         /*** http ***/
         then: get(),
 
